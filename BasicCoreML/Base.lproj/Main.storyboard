@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V3C-pP-xF7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ycb-JC-vQA">
+            <objects>
+                <viewController id="V3C-pP-xF7" customClass="ViewController" customModule="BasicCoreML" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tan-Qp-Nr8"/>
+                        <viewControllerLayoutGuide type="bottom" id="jsz-b3-YtA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f0O-LF-ubl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="keP-x9-WBq">
+                                <rect key="frame" x="16" y="77" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="TwR-Tk-opZ" appends="YES" id="ab3-3W-QkB"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="EdX-iS-D3h">
+                                <rect key="frame" x="137" y="77" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nhf-6b-vGZ" appends="YES" id="nOY-fj-nfi"/>
+                                </connections>
+                            </imageView>
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img3" translatesAutoresizingMaskIntoConstraints="NO" id="mWr-v0-FyB">
+                                <rect key="frame" x="259" y="77" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XWL-8L-5eA" appends="YES" id="xUD-4w-VeL"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5Q-8c-q06">
+                                <rect key="frame" x="16" y="215" width="343" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="v5Q-8c-q06" id="zML-cD-ULT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hK-zd-NbV" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TwR-Tk-opZ" userLabel="1">
+                    <connections>
+                        <action selector="imageTapped:" destination="V3C-pP-xF7" id="8wO-My-njH"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="nhf-6b-vGZ" userLabel="2">
+                    <connections>
+                        <action selector="imageTapped:" destination="V3C-pP-xF7" id="RQc-Gg-XBF"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XWL-8L-5eA" userLabel="3">
+                    <connections>
+                        <action selector="imageTapped:" destination="V3C-pP-xF7" id="zNc-on-85q"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img1" width="224" height="224"/>
+        <image name="img2" width="224" height="224"/>
+        <image name="img3" width="224" height="224"/>
+    </resources>
+</document>
